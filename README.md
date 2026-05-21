@@ -1,5 +1,5 @@
 # TrailTales
-
+https://trailtales-sandy.vercel.app/
 A warm, editorial travel-journal platform. Next.js 14 (App Router) + TypeScript + Tailwind + Prisma (Postgres/Supabase) + NextAuth.js + Cloudinary.
 
 ## v1 scope shipped
@@ -52,20 +52,9 @@ Open http://localhost:3000.
 | `CLOUDINARY_CLOUD_NAME` / `CLOUDINARY_API_KEY` / `CLOUDINARY_API_SECRET` | Cloudinary dashboard |
 | `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` | Same value as above (exposed to client) |
 
-## Deploy to Vercel
 
-1. Push to GitHub
-2. Import the repo in Vercel
-3. Add the env vars above in Project Settings → Environment Variables
-4. Deploy. The `build` script runs `prisma generate` automatically.
 
-For Supabase Postgres, use the **pooled connection string** (port 6543) as `DATABASE_URL` on Vercel.
 
-## What's *not* in v1 (cut for scope; easy to add)
-- Profile page (`/profile/[id]`)
-- Dashboard (`/dashboard` with edit/delete UI — the DELETE API exists)
-- Edit post flow
-- Following / likes / comments
 
 ## Folder structure
 ```
